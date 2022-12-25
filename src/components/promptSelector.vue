@@ -31,7 +31,7 @@ export default {
   },
   methods: {
     async fetchPrompts() {
-      const response = await fetch("http://127.0.0.1:3000/prompts");
+      const response = await fetch("/api/prompts");
       const prompts = await response.json();
       this.prompts = prompts;
     },

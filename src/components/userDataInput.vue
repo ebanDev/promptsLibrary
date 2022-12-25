@@ -23,7 +23,7 @@ export default {
   methods: {
     async send() {
       const response = await fetch(
-        "http://127.0.0.1:3000/completion?" +
+        "/api/completion?" +
           new URLSearchParams({
             query: this.text,
             prompt: this.promptId,
